@@ -8,9 +8,7 @@ class Author
   end
 
   def posts
-    self.posts.each do |post|
-      post
-    end
+    @posts
   end
 
   def add_post(post)
