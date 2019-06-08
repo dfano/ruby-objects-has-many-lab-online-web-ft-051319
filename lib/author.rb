@@ -1,7 +1,20 @@
 class Author
   attr_accessor :name
 
+    @posts = []
+
   def initialize(name)
     @name = name
+  end
+
+  def posts
+    self.posts.each do |post|
+      post
+    end
+  end
+
+  def add_post(post)
+    @posts << post
+    post.author = self
   end
 end
